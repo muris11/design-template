@@ -11,7 +11,7 @@
 
 <p align="center">
   <a href="https://github.com/muris11/design-template"><img src="https://img.shields.io/github/stars/muris11/design-template?style=flat&label=Stars" alt="GitHub Stars" /></a>
-  <a href="https://www.npmjs.com/package/design-template"><img src="https://img.shields.io/npm/v/design-template?label=npm&color=CB0000" alt="npm version" /></a>
+  <a href="https://www.npmjs.com/package/muris11-design-template"><img src="https://img.shields.io/npm/v/muris11-design-template?label=npm&color=CB0000" alt="npm version" /></a>
   <a href="https://www.skills.sh/search?q=design-template"><img src="https://img.shields.io/badge/skills.sh-design--template-7C3AED" alt="skills.sh" /></a>
   <a href="https://github.com/muris11/design-template/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-green" alt="MIT License" /></a>
   <img src="https://img.shields.io/badge/skills-30%2B-0A0A0A" alt="30+ Skills" />
@@ -117,23 +117,23 @@ Pick *one* — all point to the same source.
 
 ### 1 — npm / pnpm / yarn / bun (recommended)
 
-> **Note:** The bare name `design-template` on npm is taken by an unrelated package. Use the **scoped** name.
+> **Published as `muris11-design-template`** on npm (bare `design-template` was taken by an unrelated package).
 
 ```bash
 # npm
-npm install @muris11/design-template
+npm install muris11-design-template
 
 # pnpm
-pnpm add @muris11/design-template
+pnpm add muris11-design-template
 
 # yarn
-yarn add @muris11/design-template
+yarn add muris11-design-template
 
 # bun
-bun add @muris11/design-template
+bun add muris11-design-template
 ```
 
-If you *must* use the unscoped name, install from GitHub:
+Or install directly from GitHub:
 
 ```bash
 npm install github:muris11/design-template
@@ -141,18 +141,20 @@ npm install github:muris11/design-template
 npm install https://github.com/muris11/design-template/archive/refs/heads/main.tar.gz
 ```
 
-**What you get:** Local `node_modules/@muris11/design-template/skills/*` + `.claude-plugin/` auto-discovered by Claude Code.
+**What you get:** Local `node_modules/muris11-design-template/skills/*` + `.claude-plugin/` auto-discovered by Claude Code.
 
 Verify:
 ```bash
 npm pack --dry-run  # should list 30+ SKILL.md + plugin.json
-ls node_modules/@muris11/design-template/skills | wc -l  # → 32
+ls node_modules/muris11-design-template/skills | wc -l  # → 32
+# skills.sh direct URL (live)
+# https://www.skills.sh/muris11/design-template
 ```
 
 ### 2 — npx (one-shot, no install)
 
 ```bash
-npx @muris11/design-template@latest
+npx muris11-design-template@latest
 # or via the installer
 npx design-template@latest
 ```
@@ -226,7 +228,7 @@ All support the same `SKILL.md` frontmatter (`name`, `description`, `allowed-too
 opencode skill add muris11/design-template
 
 # Cursor — paste into .cursor/skills/
-cp -r node_modules/@muris11/design-template/skills/design-template-monochrome .cursor/skills/
+cp -r node_modules/muris11-design-template/skills/design-template-monochrome .cursor/skills/
 
 # Windsurf — same
 cp -r skills/design-template-modern-dark .windsurf/skills/
@@ -251,7 +253,7 @@ ln -s /path/to/design-template/skills/design-template-cyberpunk ./skills/design-
 
 ```bash
 # copy a single template into your project
-Copy-Item -Recurse node_modules/@muris11/design-template/skills/design-template-luxury ./skills/design-template-luxury
+Copy-Item -Recurse node_modules/muris11-design-template/skills/design-template-luxury ./skills/design-template-luxury
 ```
 
 No build step needed — the skill is just Markdown.
@@ -399,7 +401,7 @@ design-template/
 │   └── cover.png                 # ← this README's cover
 ├── design-template.md            # core router document (human-readable index)
 ├── plugin.json                   # root plugin pointer
-├── package.json                  # npm manifest (scoped: @muris11/design-template)
+├── package.json                  # npm manifest (publish: muris11-design-template)
 ├── .claude-plugin/
 │   └── plugin.json              # Claude Code manifest (skills: ["./skills/"], 32 skills)
 ├── rules/
@@ -442,12 +444,12 @@ No. The agent *proposes* a plan first (centralize tokens vs adapt). You approve.
 **Q: Does it work outside Claude Code?**
 Yes. Any agent that reads `SKILL.md` (OpenCode, Cursor, Windsurf, Copilot) can use the `<role>` + `<design-system>`. The `allowed-tools` frontmatter is advisory — ignore if your harness doesn't support it.
 
-**Q: npm name conflict?**
-The unscoped `design-template` on npm is taken by an unrelated `react` package (v2.0.35). Use the scoped `@muris11/design-template`:
+**Q: npm name?**
+Published as **`muris11-design-template`** on npm (bare `design-template` was taken by an unrelated package `v2.0.35`):
 ```bash
-npm install @muris11/design-template
+npm install muris11-design-template
 # then alias if you want
-ln -s node_modules/@muris11/design-template ./design-template
+ln -s node_modules/muris11-design-template ./design-template
 ```
 
 **Q: How does skills.sh indexing work?**

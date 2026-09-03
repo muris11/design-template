@@ -11,7 +11,7 @@
 
 <p align="center">
   <a href="https://github.com/muris11/design-template"><img src="https://img.shields.io/github/stars/muris11/design-template?style=flat&label=Stars" alt="GitHub Stars" /></a>
-  <a href="https://www.npmjs.com/package/design-template"><img src="https://img.shields.io/npm/v/design-template?label=npm&color=CB0000" alt="npm version" /></a>
+  <a href="https://www.npmjs.com/package/muris11-design-template"><img src="https://img.shields.io/npm/v/muris11-design-template?label=npm&color=CB0000" alt="npm version" /></a>
   <a href="https://www.skills.sh/search?q=design-template"><img src="https://img.shields.io/badge/skills.sh-design--template-7C3AED" alt="skills.sh" /></a>
   <a href="https://github.com/muris11/design-template/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-green" alt="MIT" /></a>
   <img src="https://img.shields.io/badge/skills-30%2B-0A0A0A" alt="30+ Skills" />
@@ -116,23 +116,23 @@ Pilih *satu* — semuanya menuju sumber yang sama.
 
 ### 1 — npm / pnpm / yarn / bun (direkomendasikan)
 
-> **Catatan:** Nama bare `design-template` di npm sudah diambil package lain yang tidak terkait. Pakai **scoped** name.
+> **Publish sebagai `muris11-design-template`** di npm (bare `design-template` sudah diambil package lain).
 
 ```bash
 # npm
-npm install @muris11/design-template
+npm install muris11-design-template
 
 # pnpm
-pnpm add @muris11/design-template
+pnpm add muris11-design-template
 
 # yarn
-yarn add @muris11/design-template
+yarn add muris11-design-template
 
 # bun
-bun add @muris11/design-template
+bun add muris11-design-template
 ```
 
-Kalau *harus* pakai nama tanpa scope, install dari GitHub:
+Atau install langsung dari GitHub:
 
 ```bash
 npm install github:muris11/design-template
@@ -140,18 +140,20 @@ npm install github:muris11/design-template
 npm install https://github.com/muris11/design-template/archive/refs/heads/main.tar.gz
 ```
 
-**Yang lu dapat:** Lokal `node_modules/@muris11/design-template/skills/*` + `.claude-plugin/` auto-ke-detect Claude Code.
+**Yang lu dapat:** Lokal `node_modules/muris11-design-template/skills/*` + `.claude-plugin/` auto-ke-detect Claude Code.
 
 Verifikasi:
 ```bash
 npm pack --dry-run  # harus list 30+ SKILL.md + plugin.json
-ls node_modules/@muris11/design-template/skills | wc -l  # → 32
+ls node_modules/muris11-design-template/skills | wc -l  # → 32
+# skills.sh direct URL (live)
+# https://www.skills.sh/muris11/design-template
 ```
 
 ### 2 — npx (one-shot, tanpa install)
 
 ```bash
-npx @muris11/design-template@latest
+npx muris11-design-template@latest
 # atau via installer
 npx design-template@latest
 ```
@@ -225,7 +227,7 @@ Semua support frontmatter `SKILL.md` yang sama (`name`, `description`, `allowed-
 opencode skill add muris11/design-template
 
 # Cursor — paste ke .cursor/skills/
-cp -r node_modules/@muris11/design-template/skills/design-template-monochrome .cursor/skills/
+cp -r node_modules/muris11-design-template/skills/design-template-monochrome .cursor/skills/
 
 # Windsurf — sama
 cp -r skills/design-template-modern-dark .windsurf/skills/
@@ -250,7 +252,7 @@ ln -s /path/to/design-template/skills/design-template-cyberpunk ./skills/design-
 
 ```bash
 # copy satu template ke project lu
-Copy-Item -Recurse node_modules/@muris11/design-template/skills/design-template-luxury ./skills/design-template-luxury
+Copy-Item -Recurse node_modules/muris11-design-template/skills/design-template-luxury ./skills/design-template-luxury
 ```
 
 Gak perlu build step — skill cuma Markdown.
@@ -398,7 +400,7 @@ design-template/
 │   └── cover.png                 # ← cover README ini
 ├── design-template.md            # core router document (human-readable index)
 ├── plugin.json                   # root plugin pointer
-├── package.json                  # npm manifest (scoped: @muris11/design-template)
+├── package.json                  # npm manifest (publish: muris11-design-template)
 ├── .claude-plugin/
 │   └── plugin.json              # Claude Code manifest (skills: ["./skills/"], 32 skills)
 ├── rules/
@@ -442,11 +444,11 @@ Gak. Agent *propose* plan dulu (centralize tokens vs adapt). Lu approve. Token d
 Ya. Agent apapun yang baca `SKILL.md` (OpenCode, Cursor, Windsurf, Copilot) bisa pakai `<role>` + `<design-system>`. Frontmatter `allowed-tools` itu advisory — ignore aja kalau harness lu gak support.
 
 **Q: Konflik nama npm?**
-Unscoped `design-template` di npm sudah diambil package `react` lain (v2.0.35). Pakai scoped `@muris11/design-template`:
+Unscoped `design-template` di npm sudah diambil package `react` lain (v2.0.35). Pakai `muris11-design-template`:
 ```bash
-npm install @muris11/design-template
+npm install muris11-design-template
 # terus alias kalau mau
-ln -s node_modules/@muris11/design-template ./design-template
+ln -s node_modules/muris11-design-template ./design-template
 ```
 
 **Q: Gimana skills.sh indexing kerja?**
