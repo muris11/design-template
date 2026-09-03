@@ -1,0 +1,17 @@
+# secrets
+.env
+.env.*
+.npmrc
+*.log
+muris11-*.tgz
+*.tgz
+
+# OS
+.DS_Store
+Thumbs.db
+
+# deps (jangan commit)
+node_modules/
+
+# npm pack artifact
+*.tgz
