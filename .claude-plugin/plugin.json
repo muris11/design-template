@@ -1,0 +1,14 @@
+{
+  "name": "design-template",
+  "displayName": "design-template",
+  "version": "1.0.0",
+  "description": "Design Template — curated design systems as agent skills. Monochrome, and more.",
+  "author": {
+    "name": "rifqy"
+  },
+  "repository": "https://github.com/rifqy/design-template",
+  "license": "MIT",
+  "keywords": ["design-template", "design-system", "agent-skills", "ui"],
+  "skills": ["./skills/"],
+  "mcpServers": {}
+}

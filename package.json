@@ -1,0 +1,34 @@
+{
+  "name": "design-template",
+  "version": "1.0.0",
+  "description": "Design Template — curated design systems as agent skills. Each sub-skill is one visual identity (monochrome, etc.).",
+  "type": "module",
+  "license": "MIT",
+  "author": "rifqy",
+  "homepage": "https://github.com/rifqy/design-template",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rifqy/design-template.git"
+  },
+  "keywords": [
+    "design-template",
+    "design-system",
+    "agent-skills",
+    "ui",
+    "monochrome"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "files": [
+    "skills/",
+    "design-template.md",
+    "rules/",
+    "plugin.json"
+  ],
+  "scripts": {
+    "sync-skills": "node cli/scripts/sync-skills.mjs",
+    "installer": "node cli/index.mjs",
+    "test": "node cli/scripts/smoke-test.mjs"
+  }
+}
