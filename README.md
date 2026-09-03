@@ -12,7 +12,7 @@
 <p align="center">
   <a href="https://github.com/muris11/design-template"><img src="https://img.shields.io/github/stars/muris11/design-template?style=flat&label=Stars" alt="GitHub Stars" /></a>
   <a href="https://www.npmjs.com/package/muris11-design-template"><img src="https://img.shields.io/npm/v/muris11-design-template?label=npm&color=CB0000" alt="npm version" /></a>
-  <a href="https://www.skills.sh/search?q=design-template"><img src="https://img.shields.io/badge/skills.sh-design--template-7C3AED" alt="skills.sh" /></a>
+  <a href="https://www.skills.sh/muris11/design-template"><img src="https://img.shields.io/badge/skills.sh-design--template-7C3AED" alt="skills.sh" /></a>
   <a href="https://github.com/muris11/design-template/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-green" alt="MIT License" /></a>
   <img src="https://img.shields.io/badge/skills-30%2B-0A0A0A" alt="30+ Skills" />
   <img src="https://img.shields.io/badge/Claude%20Code-Compatible-5E6AD2" alt="Claude Code" />
@@ -196,7 +196,7 @@ npx skills add muris11/design-template --skill design-template-cyberpunk
 /plugin add muris11/design-template
 ```
 
-Verify on [skills.sh](https://www.skills.sh/search?q=design-template) — search `design-template` → you should see all 30 with install counts.
+Verify on [skills.sh](https://www.skills.sh/muris11/design-template) — search `design-template` → you should see all 30 with install counts.
 
 ### 4 — Claude Code Plugin (native)
 
@@ -453,7 +453,7 @@ ln -s node_modules/muris11-design-template ./design-template
 ```
 
 **Q: How does skills.sh indexing work?**
-On `npm publish`, npm's webhook notifies skills.sh. Within 5-15 min, your versions appear at `https://www.skills.sh/search?q=design-template`. No manual `skills publish` needed. You can also `npx skills add muris11/design-template` to force a re-index.
+On `npm publish`, npm's webhook notifies skills.sh. Within 5-15 min, your versions appear at `https://www.skills.sh/muris11/design-template`. No manual `skills publish` needed. You can also `npx skills add muris11/design-template` to force a re-index.
 
 **Q: Can I mix two templates (e.g., Bauhaus grid + Cyberpunk neon)?**
 Don't. Each template's palette/radius/shadow system is intentionally closed ("Monochrome is absolute"). Mixing breaks the vibe. Pick one vibe per page/section. If you truly need hybrid, create a *new* template (copy one, remix tokens, give it a new name).
@@ -520,7 +520,7 @@ Design inspiration: Bauhaus, Swiss International, Vogue, Linear, Vercel, Braun /
 **License:** [MIT](./LICENSE) — do anything, just keep the notice.
 
 <p align="center">
-  <sub>If <code>design-template</code> saved you a week of token bikeshedding, give it a ⭐ on <a href="https://github.com/muris11/design-template">GitHub</a> and a <code>skills add</code> on <a href="https://www.skills.sh/search?q=design-template">skills.sh</a> — it takes 5 seconds and keeps the lights on.</sub>
+  <sub>If <code>design-template</code> saved you a week of token bikeshedding, give it a ⭐ on <a href="https://github.com/muris11/design-template">GitHub</a> and a <code>skills add</code> on <a href="https://www.skills.sh/muris11/design-template">skills.sh</a> — it takes 5 seconds and keeps the lights on.</sub>
 </p>
 
 <p align="center">
