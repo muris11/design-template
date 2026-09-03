@@ -1,14 +1,17 @@
 {
-  "name": "design-template",
+  "name": "@muris11/design-template",
   "version": "1.0.29",
-  "description": "Design Template — curated design systems as agent skills. Each sub-skill is one visual identity (monochrome, etc.).",
+  "description": "Design Template — 30 curated design systems as agent skills (monochrome, bauhaus, cyberpunk, claymorphism, etc.). Each skill = <role> + <design-system> + checklist.",
   "type": "module",
   "license": "MIT",
-  "author": "rifqy",
-  "homepage": "https://github.com/rifqy/design-template",
+  "author": "muris11 <muris11>",
+  "homepage": "https://github.com/muris11/design-template",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rifqy/design-template.git"
+    "url": "git+https://github.com/muris11/design-template.git"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "keywords": [
     "design-template",
@@ -24,7 +27,12 @@
     "skills/",
     "design-template.md",
     "rules/",
-    "plugin.json"
+    "plugin.json",
+    ".claude-plugin/",
+    "images/",
+    "README.md",
+    "README.id.md",
+    "LICENSE"
   ],
   "scripts": {
     "sync-skills": "node cli/scripts/sync-skills.mjs",
