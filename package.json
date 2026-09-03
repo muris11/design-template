@@ -1,5 +1,5 @@
 {
-  "name": "@muris11/design-template",
+  "name": "muris11-design-template",
   "version": "1.0.29",
   "description": "Design Template — 30 curated design systems as agent skills (monochrome, bauhaus, cyberpunk, claymorphism, etc.). Each skill = <role> + <design-system> + checklist.",
   "type": "module",
